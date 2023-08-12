@@ -9,51 +9,125 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
 </head>
 <body>
+    
     <section class="container">
+
         <!-- MENU -->
         <header class="header">
-            <div id="menu-toogle"></div>
-            <h1>LEMON EXPERIENCE</h1>
-
-
-            <nav class="navigation">
-                <ul>
-                    <li><a href="">Introducing</a></li>
-                    <li><a href="">Recipes</a></li>
-                </ul>
+            <!-- Hidden Content -->
+            <a id="Page1"></a>
+            <a id="Page2"></a>
+            <a id="Page3"></a>
+            <!-- End Hidden Content Start NavBar -->
+            <nav class="NavigationLayer" id="Navigation">
+            <a href="#Page1" id="callOne">Page One</a>
+            <a href="#Page2" id="callTwo">Page Two</a>
+            <a href="#Page3" id="callThree">Page Three</a>
+            <div class="dot"></div>
             </nav>
+
+            <main class="WrapperContainer" id="siteContainer">
+            <section class="Page1 BaseLayers" id="PageOne">
+
+                <section class="home-detail">
+                    <h1>Where Memories Unfold in Citrus Reminisce</h1>
+                </section>
+
+                <section class="home-layout">
+                    <!-- HOME -->
+                    <main class="home">
+                        <div class="home-logo">
+                            <span class="logo-ground">
+                            <img src="img/brand-logo/brand-logo.png" alt="logo" width="300px"> 
+                            </span>
+                        </div>
+                        <div class="home-info">
+                            <h1>Lorem ipsum dolor</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga et rerum odit eos dolores temporibus aperiam voluptatibus vitae, non amet minima deserunt tenetur totam maiores qui nesciunt architecto id.</p>
+                        </div>
+                    </main>
+
+                    <!-- LEMON TYPES -->
+                    <article class="types">
+                        <div class="card">
+                            <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/fo075_1.png" alt="Sicilian Lemon" width="125px">
+                                <p>Sicilian Lemon</p>
+                                <p>(citrus × limon)</p>
+                            </div>
+                            <div class="card-back">
+                                <p>It has a thick, yellow peel, an extremely acidic flavor, and is rich in juice. It is often used in cooking, baking, and cocktails.</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/fo074_1.png" alt="Meyer Lemon" width="125px">
+                                <p>Meyer Lemon</p>
+                                <p>(citrus × meyeri)</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Less acidic and more sweet, almost resembling a blend of lemon and tangerine. They are popular in desserts, sauces and beverages.</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/fo006_1.png" alt="Galego Lemon" width="125px">
+                                <p>Galego Lemon</p>
+                                <p>(citrus × aurantiifolia)</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Smaller in size, has a thin, wrinkled peel, and a distinctive flavor. It is widely used for making juices, marinades, and Brazilian dishes.</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/fo091.png" alt="Tahiti Lemon" width="125px">
+                                <p>Tahiti Lemon</p>
+                                <p>(citrus × latifolia)</p>
+                            </div>
+                            <div class="card-back">
+                                <p> Its flavor is milder and less acidic, making it a favorite in cocktails and dishes that require a more subtle citrus touch.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </section>
+
+            </section>
+
+            <section class="Page2 BaseLayers" id="PageTwo">
+                <i>Page 2</i>
+            </section>
+            <section class="Page3 BaseLayers" id="PageThree">
+                <i>Page 3</i>
+            </section>
 
         </header>
 
-        <!-- HOME -->
-        <main class="home">
-            <div class="home-logo">
-                <img src="img/brand-logo/brand-logo.png" alt="logo">
-            </div>
-            <div class="home-info">
-                <h1>Lorem ipsum dolor</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga et rerum odit eos dolores temporibus aperiam voluptatibus vitae, non amet minima deserunt tenetur totam maiores qui nesciunt architecto id.</p>
-            </div>
-        </main>
-
-        <!-- LEMON TYPES -->
-        <article class="types">
-
-            <div class="card">
-                <div class="card-inner">
-                  <div class="card-front">
-                    <p>Front Side</p>
-                  </div>
-                  <div class="card-back">
-                    <p>Back Side</p>
-                  </div>
-                </div>
-            </div>
-
-        </article>
-
     </section>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>

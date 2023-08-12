@@ -1,42 +1,71 @@
+.home-detail {
+    font-size: 15px;
+    width: 10vw;
+    height: 100vh;
+}
+
+.home-detail > h1 {
+    transform: rotate(-90deg);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 60%;
+}
+
+.home-logo {
+    margin: 0vh 5vw 0vh 5vw;
+}
+
+.home-info {
+    width: 50%;
+}
+
+/* LEMON CARDS */
+
+.types {
+    display: flex;
+}
+
 .card {
-    width: 300px;
+    width: 200px;
     height: 200px;
-    perspective: 1000px;
-  }
-  
-  .card-inner {
+}
+
+.card-inner {
     width: 100%;
     height: 100%;
-    position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-  }
-  
-  .card:hover .card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .card-front,
-  .card-back {
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg); 
+}
+
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
-  
-  .card-front {
+}
+
+.card-front {
     background-color: #6A2C70;
     color: #fff;
     display: flex;
+    flex-direction: column;
     align-items: center;
     border: 10px solid #6A2C70;
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-  }
-  
-  .card-back {
+}
+
+.card-back {
     background-color: #F08A5D;
     color: #fff;
     display: flex;
@@ -44,6 +73,6 @@
     border: 10px solid #F08A5D;
     border-radius: 10px;
     justify-content: center;
-    font-size: 24px;
+    font-size: 18px;
     transform: rotateY(180deg);
-  }
+}
