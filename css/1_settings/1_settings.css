@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap');
+
 :root{
     --color-base: #ffffff;
-    --color-primary: #fff4E1;
-    --color-secundary: #fff9EA;
-    --color-tertiary: #ffEBB7;
+    --color-primary: #F4ECD6;
+    --color-secundary: #F3EBD6;
+    --color-tertiary: #9C884D;
+    --color-add: #286446;
     --color-details: #111111;
+
+    --font-base: #ffffff;
+    --font-primary: 'Josefin Sans', sans-serif;
+    --font-secundary: 'Ysabeau Infant', sans-serif;
+    --font-details: 'Marck Script', cursive;
+    --font-title: 'Barlow Condensed', sans-serif;
+    
 }
+
