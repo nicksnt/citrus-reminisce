@@ -1,9 +1,11 @@
 html,
 body {
+    background-color: #D9BCA3 !important;
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
+
 
 button {
     border: none;
@@ -178,9 +180,9 @@ button {
 
 .Page1 {
     background-color: var(--color-primary);
+    color: var(--color-base);
     display: flex;
     left: 0;
-    color:#FFF;
     transition: left 0.5s cubic-bezier(.25,0.1,.25,1);
 }
 
