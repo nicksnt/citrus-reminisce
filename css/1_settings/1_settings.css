@@ -4,11 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap');
 
 :root{
-    --color-base: #ffffff;
-    --color-primary: #F4ECD6;
-    --color-secundary: #e8d5c4e6;
-    --color-tertiary: #9C884D;
-    --color-add: #286446;
+    --color-base: #F2F2F2;
+    --color-primary: #D9BCA3;
+    --color-secundary: #F2E3D5;
+    --color-tertiary: #7a6c43;
+    --color-complementary: #A67356;
+    --color-add: #bc9573;
+    --color-dashed: #D9B384;
     --color-details: #111111;
 
     --font-base: #ffffff;

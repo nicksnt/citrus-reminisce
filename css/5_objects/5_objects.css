@@ -44,14 +44,16 @@ button {
 }
 
 .logo-ground::before {
+    background: var(--color-add);
     content: "";
     position: absolute;
     top: -1%;
-    width: 20%;
-    height: 60%;
-    background: var(--color-details);
-    box-shadow: inset -25px 25px 50px #1a1a1a,
-    inset 25px -25px 50px #2e2e2e;
+    width: 21%;
+    height: 62%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: inset 20px -20px 40px #af8b6b,
+    inset -20px 20px 40px #c99f7b;
     opacity: 1;
     z-index: -1;
 }
@@ -106,7 +108,7 @@ button {
 .menu-toggle:hover span {
     width: .25rem;
     transform: translateX(10px);
-    background-color: rgb(243, 177, 130);
+    background-color: var(--color-complementary);
 }
 
 .navigation {
@@ -120,7 +122,7 @@ button {
     display: inline-block;
     font-family: var(--font-secundary);
     font-weight: 700;
-    color: #f6f4e6;
+    color: var(--color-base);
     text-decoration: none;
     margin-left: 3vw;
     font-size: 1.2em;
@@ -131,13 +133,13 @@ button {
 
 .navigation a:hover {
     text-decoration: none;
-    color: #fddb3a;
+    color: var(--color-add);
 }
 
 .navigation .dot {
     width: 6px;
     height: 6px;
-    background: #fddb3a;
+    background: var(--color-add);
     border-radius: 50%;
     opacity: 0;
     transform: translateX(30px);
@@ -146,21 +148,21 @@ button {
 }
 
 .navigation a:nth-child(1):hover ~ .dot {
-    transform: translateX(7vw);
+    transform: translateX(7.5vw);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
 }
 
 .navigation a:nth-child(2):hover ~ .dot {
-    transform: translateX(17vw);
+    transform: translateX(17.5vw);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
 }
 
 .navigation a:nth-child(3):hover ~ .dot {
-    transform: translateX(25.5vw);
+    transform: translateX(26.5vw);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -175,7 +177,7 @@ button {
 }
 
 .Page1 {
-    background-color: darkblue;
+    background-color: var(--color-primary);
     display: flex;
     left: 0;
     color:#FFF;
@@ -183,14 +185,14 @@ button {
 }
 
 .Page2 {
-    background-color: darkorange;
+    background-color: var(--color-primary);
     display: flex;
     left: 100%;
     transition: left 0.5s cubic-bezier(.25,0.1,.25,1);
 }
 
 .Page3 {
-    background-color: darkgreen;
+    background-color: var(--color-primary);
     display: flex;
     left: 100%;
     transition: left 0.5s cubic-bezier(.25,0.1,.25,1);
@@ -251,14 +253,14 @@ a[id="Page3"]:target ~ main > section#PageThree{
 }
 
 .recipe {
+    background-color: var(--color-secundary);
     position: relative;
     width: 25%;
     height: 45vh;
-    background-color: #EADDCA;
     border-radius: 10px;
     overflow: hidden;
-    border: 2px dashed #DAA06D;
-    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    border: 2px dashed var(--color-dashed);
+    box-shadow: 0 0 0 4px var(--color-secundary), 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
     margin: 10vh 2vw 0vh 0vw;
   }
 
@@ -277,11 +279,12 @@ a[id="Page3"]:target ~ main > section#PageThree{
   }
   
   .recipe-title {
+    color: var(--color-tertiary);
+    font-family: var(--font-primary);
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
-    color: White;
     font-weight: bold;
     font-size: 1.1rem;
   }
@@ -295,8 +298,8 @@ a[id="Page3"]:target ~ main > section#PageThree{
     display: grid;
     place-content: center;
     padding: 2rem 2rem 3rem 2rem;
-   border: 2px dashed #DAA06D;
-    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    border: 2px dashed var(--color-dashed);
+    box-shadow: 0 0 0 4px var(--font-primary), 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   }
   
   .content {
@@ -308,14 +311,14 @@ a[id="Page3"]:target ~ main > section#PageThree{
   
   .box-title {
     display: block;
-    color: white;
+    color: var(--color-base);
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1rem;
   }
   
   .box-text {
-    color: rgba(255, 255, 255, 0.738);
+    color: var(--color-base);
     font-size: 0.8rem;
   }
   
@@ -333,37 +336,46 @@ a[id="Page3"]:target ~ main > section#PageThree{
   }
   
   .box2 {
+    background: var(--color-add);
+    border: 2px dashed var(--color-dashed);
     top: -70%;
     right: -60%;
-    background: #9C884D;
     border-radius: 200px;
+    border: 2px dashed var(--color-dashed);
+    box-shadow: 0 0 0 4px var(--color-add), 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   }
   
   .box3 {
+    background: var(--color-complementary);
+    border: 2px dashed var(--color-dashed);
     top: -75%;
     right: -30%;
-    background: #1a1a1a;
     border-radius: 200px;
+    border: 2px dashed var(--color-dashed);
+    box-shadow: 0 0 0 4px var(--color-complementary), 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   }
 
   .some-more {
-    color: var(--color-base);
+    background-color: var(--color-secundary);
+    color: var(--color-tertiary);
     width: 81.5%;
     height: 20%;
-    background-color: #EADDCA;
     border-radius: 10px;
     overflow: hidden;
-    border: 2px dashed #DAA06D;
-    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    border: 2px dashed var(--color-dashed);
+    box-shadow: 0 0 0 4px var(--color-secundary), 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
     margin: 10vh 2vw 0vh 0vw;
   }
 
   .some-more h1 {
-    font-size: 1.5rem;
-    margin: 1vw;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 2vh 1vw 1vh 1vw;
   }
 
   .some-more p {
+    font-family: var(--font-secundary);
     font-size: 1rem;
-    margin: 1vw;
+    margin: 0vh 1vw 1vh 1vw;
   }
