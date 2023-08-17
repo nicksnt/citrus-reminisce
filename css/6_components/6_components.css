@@ -4,14 +4,15 @@
     padding: 15px 35px;
     font-size: 15px;
     font-weight: 700;
-    color: #2F5C2F;
+    color: var(--color-details);
     background-color: var(--color-dashed);
-    border: 2px dashed #2F5C2F;
+    border: 2px dashed var(--color-details);
     cursor: pointer;
     transition: all 0.5s;
     border-radius: 10px;
     box-shadow: 0 0 0 4px 2F5C2F, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
     z-index: 0;
+    margin-top: 1vh;
   }
   
   .learn-more::after {
@@ -217,11 +218,13 @@
 }
 
 .decoration img {
-    margin: 4vh 1vw 0vh 1vw;
+    width: 100px;
+    margin: 5vh 1vw 0vh 1vw;
 }
 
 #collins {
-    margin-top: 2vh;
+    width: 120px;
+    margin-top: 3vh;
 }
 
 .decoration h1 {
@@ -234,8 +237,9 @@
     font-weight: 700;
     position: absolute;
     font-size: 1em;
-    margin-top: -2vh;
+    margin: -1.5vh 0vw 0vh -0.5vw;
 }
+
 
 .tabber-drink label:hover {
     transform: scale(1.01);
@@ -263,9 +267,10 @@
 }
 
 .content-divider {
-    background-color: var(--color-tertiary);
-    width: 2px;
-    height: 50%;
+    background-color: var(--color-dashed);
+    width: 1px;
+    height: 95%;
+    margin: 2vh 1vw 0vh 1vw;
 }
 
 .drink-content h1 {
@@ -277,7 +282,7 @@
 
 .drink-content p {
     font-family: var(--font-secundary);
-    margin-top: 3vh;
+    margin-top: 4vh;
 }
 
 .style-content {
@@ -294,6 +299,7 @@
     width: 50%;
     margin-left: 0.5vw;
     text-align: left;
+    padding: 0vh 4vw 0vh 0vh;
 }
 
 .tabber-drink [type=radio] {
