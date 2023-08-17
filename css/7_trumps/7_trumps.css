@@ -1,0 +1,51 @@
+@media screen and (max-width: 1290px) {
+    .navigation {
+        margin: 5vh 0vw 0vh 29vw;
+    }
+
+    .some-more {
+        width: 87%;
+        height: 25%;
+    }
+
+    .recipe {
+        width: 27%;
+    }
+
+    .drink-content {
+        width: 97%;
+        margin-left: -1.8vw;
+    }
+
+    .decoration {
+        padding: 2rem 9.5rem 10rem 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .navigation {
+        margin: 5vh 0vw 0vh 30vw;
+    }
+
+    .some-more {
+        height: 27%;
+    }
+
+    .decoration {
+        padding: 2rem 8rem 10rem 2rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .navigation {
+        margin: 5vh 0vw 0vh 22vw;
+    }
+
+    .types {
+        margin-right: auto;
+    }
+
+    .card-inner {
+        width: 90%;
+    }
+}
